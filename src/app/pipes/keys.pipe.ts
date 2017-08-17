@@ -12,8 +12,6 @@ export class KeysPipe implements PipeTransform {
     for (let key in value) {
       keys.push(key);
     }
-
     return keys;
   }
-
 }

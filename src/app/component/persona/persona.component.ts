@@ -15,7 +15,6 @@ export class PersonaComponent implements OnInit {
     this.registryService.getDataList()
       .subscribe(data => {
         this.persona = data;
-        console.log(data);
       });
 
   }
@@ -24,11 +23,9 @@ export class PersonaComponent implements OnInit {
   }
 
   borrarList(k) {
-
     this.registryService.deleteData(k)
     .subscribe(respuesta => {
       if (respuesta) {
-        console.log(respuesta);
       }else {
         delete this.persona[k];
       }

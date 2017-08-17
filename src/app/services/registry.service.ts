@@ -34,7 +34,6 @@ export class RegistryService {
 
   getData(key: string) {
     const url = `${this.urlPut}/${key}.json`;
-    console.log('get', url);
     return this.http.get(url)
     .map(res => {
       return res.json();

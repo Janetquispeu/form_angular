@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 // Route
@@ -15,6 +15,8 @@ import { KeysPipe } from './pipes/keys.pipe';
 import { AppComponent } from './app.component';
 import { PersonaComponent } from './component/persona/persona.component';
 import { RegistryComponent } from './component/registry/registry.component';
+import { DataComponent } from './component/data/data.component';
+import { TemplateComponent } from './component/template/template.component';
 
 
 @NgModule({
@@ -22,13 +24,16 @@ import { RegistryComponent } from './component/registry/registry.component';
     AppComponent,
     PersonaComponent,
     RegistryComponent,
-    KeysPipe
+    KeysPipe,
+    DataComponent,
+    TemplateComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
-    APP_ROUTING
+    APP_ROUTING,
+    ReactiveFormsModule
   ],
   providers: [
     RegistryService

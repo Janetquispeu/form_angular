@@ -27,7 +27,6 @@ export class RegistryComponent implements OnInit {
     });
     this.nuevo = false;
     if (this.key !== 'nuevo') {
-      console.log(this.key);
       this.registryService.getData(this.key)
       .subscribe(data => {
          this.persona = data;
@@ -50,7 +49,6 @@ export class RegistryComponent implements OnInit {
       this.registryService.updateData(this.persona, this.key)
       .subscribe(
         data => {
-          console.log(data);
       },
       error => console.error( error));
     }
