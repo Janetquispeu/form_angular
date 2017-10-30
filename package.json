@@ -5,11 +5,10 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "deploy": "ng build --prod && angular-cli-ghpages --branch master"
+    "deploy": "ng build --prod --base-href https://Janetquispeu.github.io/http_angular/ && angular-cli-ghpages --branch gh-pages"
   },
   "private": true,
   "dependencies": {
