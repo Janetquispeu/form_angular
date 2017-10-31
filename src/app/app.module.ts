@@ -7,7 +7,7 @@ import { HttpModule } from '@angular/http';
 import { APP_ROUTING } from './app.routes';
 
 // Services
-import { RegistryService } from 'app/services/registry.service';
+import { RegistryService } from './services/registry.service';
 
 // Pipes
 import { KeysPipe } from './pipes/keys.pipe';

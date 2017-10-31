@@ -36,6 +36,8 @@ export class DataComponent implements OnInit {
   ngOnInit() {
   }
 
+  get formDataPasatiempos() { return <FormArray>this.forma.get('pasatiempos'); }
+
   enviar(): any {
     console.log(this.forma);
     console.log(this.forma.value);
@@ -47,5 +49,6 @@ export class DataComponent implements OnInit {
     (<FormArray>this.forma.controls['pasatiempos']).push(
       new FormControl('', Validators.required)
     );
+    console.log(this.forma.controls['pasatiempos']);
   }
 }

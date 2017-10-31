@@ -10,8 +10,6 @@ export class PersonaComponent implements OnInit {
   persona: any[] = [];
   key: string;
   constructor(private registryService: RegistryService) {
-
-
     this.registryService.getDataList()
       .subscribe(data => {
         this.persona = data;

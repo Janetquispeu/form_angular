@@ -8,7 +8,7 @@ import { NgForm } from '@angular/forms';
   styleUrls: ['./template.component.css']
 })
 export class TemplateComponent implements OnInit {
-  usuario: Object = {
+  usuario = {
     nombre: null,
     apellido: null,
     correo: null,

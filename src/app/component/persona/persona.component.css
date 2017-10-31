@@ -4,3 +4,7 @@
 td, th {
   text-align: center;
 }
+.b-form-table {
+  width: 70%;
+  margin: auto;
+}
